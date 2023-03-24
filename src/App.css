@@ -1,0 +1,37 @@
+.leading {
+    font-size: 1.36rem;
+    line-height: 2.56rem;
+    text-align: center;
+    color: #000;
+    text-decoration: underline;
+}
+
+.paragraph {
+    color: #757575;
+    text-align: justify;
+    line-height: 2.32rem;
+}
+
+.image figcaption {
+    text-align: center;
+}
+
+.heading-first {
+    color: #AD8748;
+    font-weight: bold;
+    line-height: 2.56rem;
+    font-size: 1.68rem;
+}
+
+.heading-second {
+    color: #000;
+    font-weight: bold;
+    line-height: 2rem;
+    font-size: 1.44rem;
+}
+
+.emphasize {
+    text-align: center;
+    line-height: 2.8rem;
+    font-size: 1.28rem;
+}
