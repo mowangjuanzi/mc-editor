@@ -111,7 +111,7 @@ function App() {
 
     return (
         <Slate editor={editor} value={initValue} onChange={SaveContent}>
-            <Editable
+            <Editable className="editor-content"
                 renderElement={renderElement}
             />
         </Slate>
