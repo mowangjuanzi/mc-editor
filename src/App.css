@@ -3,7 +3,11 @@ body {
 }
 
 .editor-content {
-    @apply w-[32rem] p-2 mt-2 border rounded-md mx-auto
+    @apply w-[32rem] p-2 mt-2 border rounded-md h-screen
+}
+
+.right-sidebar {
+    @apply fixed right-0 inset-y-0 w-80 border-l bg-white
 }
 
 /** 以下就是内容样式 **/
