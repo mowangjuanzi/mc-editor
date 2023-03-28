@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {createEditor} from "slate";
 import {Editable, Slate, withReact} from "slate-react";
-import './App.css';
+import './app.css';
 
 const initValue = [
     {
