@@ -1,0 +1,9 @@
+.editor-content {
+    @apply w-[32rem] p-2 mt-2 border rounded-md border-[grey]
+}
+
+/** 下面给编辑器的内容做样式 **/
+
+.ini_txt {
+    @apply text-justify text-[#757575] leading-[2.32rem] text-[1.28rem]
+}

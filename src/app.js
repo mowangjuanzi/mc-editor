@@ -1,7 +1,8 @@
-import {useState} from "react";
+import {useCallback, useState} from "react";
 import {createEditor} from "slate";
 import {Editable, Slate, withReact} from "slate-react";
 import './app.css';
+import Element from "./components";
 
 const initValue = [
     {
@@ -15,9 +16,19 @@ function App() {
     // 实例化编辑器
     const [editor] = useState(() => withReact(createEditor()))
 
+    // 渲染元素
+    const renderElement = useCallback((slateProps) => {
+        const elementProps = {...slateProps, editor}
+
+        return (<Element {...elementProps} />);
+    }, [editor])
+
     return (
         <Slate editor={editor} value={initValue}>
-            <Editable />
+
+            <Editable className='editor-content'
+                      renderElement={renderElement}
+            />
         </Slate>
     );
 }
